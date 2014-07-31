@@ -1,0 +1,97 @@
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	margin:0;
+    padding:0;
+   
+}
+body{
+	font-family:"Roboto",sans-serif;
+	font-weight:100;
+}
+h2{
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color:#666;
+	font-size: 2.5em;
+}
+h3{
+	font-weight:300;
+	text-transform: uppercase;
+	text-align: center;
+	color:#666;
+	font-size: 2em;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3em;
+	color:#666;
+}
+p{
+	font-size: 1.4em;
+}
+html,body{
+	letter-spacing: 0.3em;
+}
+.wrapper{
+	width:100%;
+	height:auto;
+}
+.icon{
+	text-align: center;
+}
+.icon img{
+	width:0;
+	height:0;
+}
+.icon img.grow-img {
+	width:800px;
+	height:600px;
+}
+.main{
+	width:auto;
+	height:800px;
+	background:url("../img/ajisen.jpg") bottom center no-repeat #cccccc;
+}
+.main .article{
+	top:30px;
+	position: absolute;
+	left:0;
+	right:0;
+
+}
+.description{
+	width:100%;
+	text-align: center;
+}
+p{
+	display:block;
+	margin:0 90px;
+	padding:0 40px 15px 40px;
+	line-height: 2;
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+@-moz-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+@keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
+
+
+.animate{
+	-moz-transition: 2s ease-in;
+	-webkit-transition: 2s ease-in;
+	transition: 2s ease-in;
+/* use fadeIn animation defined, timing function: ease-in and repeat only 1 time*/
+	-moz-animation: fadeIn ease-in 1;
+	-webkit-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+/*make sure that animation remains at the last keyframe: opacity: 1 when its complete */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;	
+	animation-duration: 1s;
+}
